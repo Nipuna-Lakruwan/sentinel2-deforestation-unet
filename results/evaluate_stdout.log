@@ -1,0 +1,5 @@
+segmentation (2021 vs WorldCover): {"unet": {"iou": 0.9, "precision": 0.941, "recall": 0.954, "accuracy": 0.946, "pixels": 922965}, "ndvi>0.57": {"iou": 0.871, "precision": 0.934, "recall": 0.928, "accuracy": 0.93, "pixels": 922965}}
+change 2019-2021: {"precision": 0.055, "recall": 0.082, "f1": 0.065, "our_area_ha": 3908.6, "hansen_area_ha": 2228.6, "our_patches": 535, "patches_mostly_confirmed": 0.03}
+change 2021-2024: {"precision": 0.076, "recall": 0.054, "f1": 0.063, "our_area_ha": 3358.5, "hansen_area_ha": 4637.1, "our_patches": 338, "patches_mostly_confirmed": 0.109}
+change 2019-2024: {"precision": 0.247, "recall": 0.233, "f1": 0.24, "our_area_ha": 6374.8, "hansen_area_ha": 6865.6, "our_patches": 512, "patches_mostly_confirmed": 0.131}
+forest fraction U-Net: {2019: 0.73, 2021: 0.654, 2024: 0.619}  Hansen: {2019: 0.54, 2021: 0.496, 2024: 0.403}

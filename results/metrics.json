@@ -1,0 +1,230 @@
+{
+ "ndvi_threshold": 0.5700000000000001,
+ "segmentation_2021_vs_worldcover": {
+  "train": {
+   "unet": {
+    "iou": 0.939,
+    "precision": 0.963,
+    "recall": 0.974,
+    "accuracy": 0.956,
+    "pixels": 3383823
+   },
+   "ndvi>0.57": {
+    "iou": 0.899,
+    "precision": 0.95,
+    "recall": 0.944,
+    "accuracy": 0.926,
+    "pixels": 3383823
+   }
+  },
+  "val": {
+   "unet": {
+    "iou": 0.952,
+    "precision": 0.975,
+    "recall": 0.976,
+    "accuracy": 0.97,
+    "pixels": 614940
+   },
+   "ndvi>0.57": {
+    "iou": 0.917,
+    "precision": 0.945,
+    "recall": 0.969,
+    "accuracy": 0.947,
+    "pixels": 614940
+   }
+  },
+  "test": {
+   "unet": {
+    "iou": 0.9,
+    "precision": 0.941,
+    "recall": 0.954,
+    "accuracy": 0.946,
+    "pixels": 922965
+   },
+   "ndvi>0.57": {
+    "iou": 0.871,
+    "precision": 0.934,
+    "recall": 0.928,
+    "accuracy": 0.93,
+    "pixels": 922965
+   }
+  }
+ },
+ "change_vs_hansen": {
+  "2019-2021": {
+   "unet_whole_area": {
+    "precision": 0.055,
+    "recall": 0.082,
+    "f1": 0.065,
+    "our_area_ha": 3908.6,
+    "hansen_area_ha": 2228.6,
+    "our_patches": 535,
+    "patches_mostly_confirmed": 0.03
+   },
+   "unet_on_hansen_intact_forest": {
+    "precision": 0.502,
+    "recall": 0.063,
+    "f1": 0.111,
+    "our_area_ha": 225.3,
+    "hansen_area_ha": 2170.4,
+    "our_patches": 1236,
+    "patches_mostly_confirmed": 0.291
+   },
+   "unet_test_blocks": {
+    "precision": 0.035,
+    "recall": 0.27,
+    "f1": 0.062,
+    "our_area_ha": 726.3,
+    "hansen_area_ha": 79.0,
+    "our_patches": 148,
+    "patches_mostly_confirmed": 0.007
+   },
+   "ndvi_whole_area": {
+    "precision": 0.072,
+    "recall": 0.361,
+    "f1": 0.12,
+    "our_area_ha": 9449.5,
+    "hansen_area_ha": 2228.6,
+    "our_patches": 879,
+    "patches_mostly_confirmed": 0.116
+   },
+   "ndvi_on_hansen_intact_forest": {
+    "precision": 0.607,
+    "recall": 0.347,
+    "f1": 0.442,
+    "our_area_ha": 924.8,
+    "hansen_area_ha": 2170.4,
+    "our_patches": 2960,
+    "patches_mostly_confirmed": 0.215
+   },
+   "unet_only_share_on_previously_cleared_land": 0.906,
+   "hansen_only_share_by_loss_year": {
+    "2020": 0.318,
+    "2021": 0.682
+   },
+   "hansen_only_mean_unet_forest_prob_at_y2": 0.925
+  },
+  "2021-2024": {
+   "unet_whole_area": {
+    "precision": 0.076,
+    "recall": 0.054,
+    "f1": 0.063,
+    "our_area_ha": 3358.5,
+    "hansen_area_ha": 4637.1,
+    "our_patches": 338,
+    "patches_mostly_confirmed": 0.109
+   },
+   "unet_on_hansen_intact_forest": {
+    "precision": 0.853,
+    "recall": 0.052,
+    "f1": 0.098,
+    "our_area_ha": 226.3,
+    "hansen_area_ha": 4582.6,
+    "our_patches": 738,
+    "patches_mostly_confirmed": 0.649
+   },
+   "unet_test_blocks": {
+    "precision": 0.094,
+    "recall": 0.096,
+    "f1": 0.095,
+    "our_area_ha": 316.8,
+    "hansen_area_ha": 278.6,
+    "our_patches": 78,
+    "patches_mostly_confirmed": 0.026
+   },
+   "ndvi_whole_area": {
+    "precision": 0.138,
+    "recall": 0.071,
+    "f1": 0.094,
+    "our_area_ha": 2100.6,
+    "hansen_area_ha": 4637.1,
+    "our_patches": 442,
+    "patches_mostly_confirmed": 0.138
+   },
+   "ndvi_on_hansen_intact_forest": {
+    "precision": 0.951,
+    "recall": 0.071,
+    "f1": 0.132,
+    "our_area_ha": 255.9,
+    "hansen_area_ha": 4582.6,
+    "our_patches": 650,
+    "patches_mostly_confirmed": 0.757
+   },
+   "unet_only_share_on_previously_cleared_land": 0.97,
+   "hansen_only_share_by_loss_year": {
+    "2022": 0.305,
+    "2023": 0.23,
+    "2024": 0.465
+   },
+   "hansen_only_mean_unet_forest_prob_at_y2": 0.958
+  },
+  "2019-2024": {
+   "unet_whole_area": {
+    "precision": 0.247,
+    "recall": 0.233,
+    "f1": 0.24,
+    "our_area_ha": 6374.8,
+    "hansen_area_ha": 6865.6,
+    "our_patches": 512,
+    "patches_mostly_confirmed": 0.131
+   },
+   "unet_on_hansen_intact_forest": {
+    "precision": 0.937,
+    "recall": 0.23,
+    "f1": 0.369,
+    "our_area_ha": 1504.7,
+    "hansen_area_ha": 6753.1,
+    "our_patches": 1507,
+    "patches_mostly_confirmed": 0.526
+   },
+   "unet_test_blocks": {
+    "precision": 0.089,
+    "recall": 0.192,
+    "f1": 0.122,
+    "our_area_ha": 842.7,
+    "hansen_area_ha": 357.6,
+    "our_patches": 150,
+    "patches_mostly_confirmed": 0.053
+   },
+   "ndvi_whole_area": {
+    "precision": 0.169,
+    "recall": 0.239,
+    "f1": 0.198,
+    "our_area_ha": 8769.5,
+    "hansen_area_ha": 6865.6,
+    "our_patches": 789,
+    "patches_mostly_confirmed": 0.104
+   },
+   "ndvi_on_hansen_intact_forest": {
+    "precision": 0.871,
+    "recall": 0.233,
+    "f1": 0.367,
+    "our_area_ha": 1508.0,
+    "hansen_area_ha": 6753.1,
+    "our_patches": 2330,
+    "patches_mostly_confirmed": 0.389
+   },
+   "unet_only_share_on_previously_cleared_land": 0.937,
+   "hansen_only_share_by_loss_year": {
+    "2020": 0.048,
+    "2021": 0.121,
+    "2022": 0.252,
+    "2023": 0.191,
+    "2024": 0.388
+   },
+   "hansen_only_mean_unet_forest_prob_at_y2": 0.95
+  }
+ },
+ "forest_fraction_unet": {
+  "2019": 0.73,
+  "2021": 0.654,
+  "2024": 0.619
+ },
+ "forest_fraction_hansen": {
+  "2019": 0.54,
+  "2021": 0.496,
+  "2024": 0.403
+ },
+ "checkpoint_epoch": 25,
+ "min_patch_ha": 0.5
+}
